@@ -21,3 +21,11 @@ val purple200 = Color(0xFFBB86FC)
 val purple500 = Color(0xFF6200EE)
 val purple700 = Color(0xFF3700B3)
 val teal200 = Color(0xFF03DAC5)
+
+// Timer Colors
+val countAlpha = Color(0xB3000000)
+val timerAlpha = Color(0xB3FFFFFF)
+val unitAlpha = Color(0x99FFFFFF)
+val whiteAlpha40 = Color(0x59FFFFFF)
+val whiteAlpha20 = Color(0x33FFFFFF)
+val circleStrokeReverse = Color(0xFFF13636)
