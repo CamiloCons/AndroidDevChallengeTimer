@@ -112,7 +112,11 @@ fun TimeUnitList(
             whiteAlpha20
         }
 
-        unitValue.value = scrollState.firstVisibleItemIndex
+        unitValue.value = if (scrollState.firstVisibleItemIndex > 59) {
+            59
+        } else {
+            scrollState.firstVisibleItemIndex
+        }
         LazyColumn(
             state = scrollState,
             modifier = Modifier
@@ -120,7 +124,7 @@ fun TimeUnitList(
                 .height(210.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            items(65) {
+            items(73) {
                 HoursListItem(colorState = animateColor)
                 Divider(color = Color.Transparent, thickness = 8.dp)
             }
